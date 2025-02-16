@@ -16,7 +16,8 @@ class languageVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+  
+        print("hello")
         // Load saved language or default to English
         let selectedLanguage = UserDefaults.standard.string(forKey: "SelectedLanguage") ?? "en"
         
