@@ -1,0 +1,48 @@
+
+/* Class = "UILabel"; text = "   welcome"; ObjectID = "1rd-lW-Eie"; */
+"1rd-lW-Eie.text" = "   welcome";
+
+/* Class = "UIButton"; normalTitle = "Clear"; ObjectID = "3O6-Xh-8Yt"; */
+"3O6-Xh-8Yt.normalTitle" = "Clear";
+
+/* Class = "UILabel"; text = "    Add Task"; ObjectID = "6gW-VX-bfn"; */
+"6gW-VX-bfn.text" = "    Add Task";
+
+/* Class = "UITabBarItem"; title = "Stopwatch"; ObjectID = "8o7-Lk-L7Z"; */
+"8o7-Lk-L7Z.title" = "Stopwatch";
+
+/* Class = "UITabBarItem"; title = "ToDo"; ObjectID = "A6f-jX-YV2"; */
+"A6f-jX-YV2.title" = "ToDo";
+
+/* Class = "UILabel"; text = "   welcome"; ObjectID = "C1e-iu-KkG"; */
+"C1e-iu-KkG.text" = "   welcome";
+
+/* Class = "UITextField"; placeholder = "  Message"; ObjectID = "FPc-gj-b2G"; */
+"FPc-gj-b2G.placeholder" = "  Message";
+
+/* Class = "UIButton"; normalTitle = "Encrypt"; ObjectID = "Iv9-dr-pVc"; */
+"Iv9-dr-pVc.normalTitle" = "Encrypt";
+
+/* Class = "UITextField"; placeholder = "Task Name"; ObjectID = "N8h-4g-miU"; */
+"N8h-4g-miU.placeholder" = "Task Name";
+
+/* Class = "UILabel"; text = "   welcome"; ObjectID = "bTi-1q-rlc"; */
+"bTi-1q-rlc.text" = "   welcome";
+
+/* Class = "UIButton"; normalTitle = "Save"; ObjectID = "dHt-gb-5Dt"; */
+"dHt-gb-5Dt.normalTitle" = "Save";
+
+/* Class = "UITabBarItem"; title = "Encryption"; ObjectID = "lEq-qG-elv"; */
+"lEq-qG-elv.title" = "Encryption";
+
+/* Class = "UILabel"; text = "Encrypted / Decrypted String"; ObjectID = "lG5-qb-8Jd"; */
+"lG5-qb-8Jd.text" = "Encrypted / Decrypted String";
+
+/* Class = "UIButton"; normalTitle = "Decrypt"; ObjectID = "mAt-Ij-D1i"; */
+"mAt-Ij-D1i.normalTitle" = "Decrypt";
+
+/* Class = "UILabel"; text = "12:35:46"; ObjectID = "mZa-Mb-cbC"; */
+"mZa-Mb-cbC.text" = "12:35:46";
+
+/* Class = "UITextField"; placeholder = "  secret key"; ObjectID = "pOW-ol-6F9"; */
+"pOW-ol-6F9.placeholder" = "  secret key";

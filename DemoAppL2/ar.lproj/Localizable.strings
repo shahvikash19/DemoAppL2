@@ -1,0 +1,44 @@
+/* 
+  Localizable.string.strings
+  DemoAppL2
+
+  Created by Vikas Hareram Shah on 14/02/25.
+  
+*/
+
+
+
+"welcomeKey" = "مرحبًا";
+"ClearKey" = "مسح";
+"AddTaskKey" = "إضافة مهمة";
+"StopwatchKey" = "ساعة التوقيت";
+"ToDoKey" = "قائمة المهام";
+"MessageKey" = "رسالة";
+"EncryptKey" = "تشفير";
+"TaskNameKey" = "اسم المهمة";
+"SaveKey" = "حفظ";
+"EncryptionKey" = "تشفير";
+"EncryptedDecryptedStringKey" = "النص المشفر / المفكك";
+"DecryptKey" = "فك التشفير";
+"SecretKeyKey" = "المفتاح السري";
+"ChangeLanguageKey" = "تغيير اللغة";
+"LogoutKey" = "تسجيل الخروج";
+
+
+
+
+//"welcomeKey" = "welcome";
+//"ClearKey" = "Clear";
+//"Add TaskKey" = "Add Task";
+//"StopwatchKey" = "Stopwatch";
+//"ToDoKey" = "ToDo";
+//"welcomeKey" = "welcome";
+//"MessageKey" = "Message";
+//"EncryptKey" = "Encrypt";
+//"Task NameKey" = "Task Name";
+//"welcomeKey" = "welcome";
+//"SaveKey" = "Save";
+//"EncryptionKey" = "Encryption";
+//"Encrypted / Decrypted StringKey" = "Encrypted / Decrypted String";
+//"DecryptKey" = "Decrypt";
+//"secret keyKey" = "secret key";

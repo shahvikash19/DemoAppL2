@@ -1,0 +1,23 @@
+/* 
+  Localizable1.strings
+  DemoAppL2
+
+  Created by Vikas Hareram Shah on 16/02/25.
+  
+*/
+
+"welcomeKey" = "Welcome";
+"ClearKey" = "Clear";
+"AddTaskKey" = "Add Task";
+"StopwatchKey" = "Stopwatch";
+"ToDoKey" = "To-Do";
+"MessageKey" = "Message";
+"EncryptKey" = "Encrypt";
+"TaskNameKey" = "Task Name";
+"SaveKey" = "Save";
+"EncryptionKey" = "Encryption";
+"EncryptedDecryptedStringKey" = "Encrypted / Decrypted String";
+"DecryptKey" = "Decrypt";
+"SecretKeyKey" = "Secret Key";
+"ChangeLanguageKey" = "Change Language";
+"LogoutKey" = "Logout";
