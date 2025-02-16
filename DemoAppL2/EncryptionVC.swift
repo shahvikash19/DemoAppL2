@@ -29,10 +29,14 @@ class EncryptionVC: UIViewController {
     }
     
     func updateLocalizedStrings() {
-            decBTN.setTitle(NSLocalizedString("DecryptKey", comment: "Decrypt button text"), for: .normal)
-            encBTN.setTitle(NSLocalizedString("EncryptKey", comment: "Encrypt button text"), for: .normal)
-            welcomeLBL.text = NSLocalizedString("welcomeKey", comment: "Welcome label text")
-        }
+        // Update button titles using the localized() extension
+        decBTN.setTitle("DecryptKey".localized(), for: .normal)
+        encBTN.setTitle("EncryptKey".localized(), for: .normal)
+        
+        // Update label text
+        welcomeLBL.text = "welcomeKey".localized()
+    }
+
 
     @IBAction func menuBTN(_ sender: UIButton) {
         let vc = storyboard?.instantiateViewController(withIdentifier: "menuVC") as! menuVC

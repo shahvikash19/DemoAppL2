@@ -15,5 +15,27 @@ class ViewController2: UITabBarController {
         navigationItem.hidesBackButton = true
 
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+            super.viewWillAppear(animated)
+            updateLocalizedStrings()
+        }
+    func updateLocalizedStrings() {
+            if let tabBarItems = tabBar.items {
+                if tabBarItems.count > 0 {
+                    tabBarItems[0].title = "ToDoKey".localized()
+                }
+                if tabBarItems.count > 1 {
+                    tabBarItems[1].title = "StopwatchKey".localized()
+                }
+                if tabBarItems.count > 2 {
+                    tabBarItems[2].title = "EncryptKey".localized()
+                }
+            }
 
+            DispatchQueue.main.async {
+                self.tabBar.setNeedsLayout()
+            }
+        }
 }
+

@@ -26,6 +26,7 @@ class ToDoVC: UIViewController {
 
         // Load tasks from UserDefaults
         loadTasks()
+        updateLocalizedStrings()
 
         // Floating Action Button setup
         let fabButton = UIButton(type: .system)
@@ -47,7 +48,10 @@ class ToDoVC: UIViewController {
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
-    
+    func updateLocalizedStrings() {
+        wlecomeLBL.text = "welcomeKey".localized()
+    }
+
 
     @IBAction func menu2BTN(_ sender: UIButton) {
         let vc = storyboard?.instantiateViewController(withIdentifier: "menuVC") as! menuVC

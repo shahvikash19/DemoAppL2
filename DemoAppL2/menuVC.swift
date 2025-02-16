@@ -18,10 +18,10 @@ class menuVC: UIViewController {
     }
     
     func updateLocalizedStrings() {
-            // Set localized titles for the buttons
-            logoutBtn.setTitle(NSLocalizedString("LogoutKey", comment: "Logout button text"), for: .normal)
-            changeLanguageBTN.setTitle(NSLocalizedString("ChangeLanguageKey", comment: "Change Language button text"), for: .normal)
-        }
+        // Set localized titles for the buttons
+        logoutBtn.setTitle("LogoutKey".localized(), for: .normal)
+        changeLanguageBTN.setTitle("ChangeLanguageKey".localized(), for: .normal)
+    }
 
     @IBAction func changelanguageBTN(_ sender: UIButton) {
         

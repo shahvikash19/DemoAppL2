@@ -31,13 +31,14 @@ class TaskVC: UIViewController {
     }
     
     func updateLocalizedStrings() {
-            // Update button titles using NSLocalizedString
-            clrBTN.setTitle(NSLocalizedString("ClearKey", comment: "Clear button text"), for: .normal)
-            saveBTN.setTitle(NSLocalizedString("SaveKey", comment: "Save button text"), for: .normal)
+        // Update button titles using the localized() extension
+        clrBTN.setTitle("ClearKey".localized(), for: .normal)
+        saveBTN.setTitle("SaveKey".localized(), for: .normal)
+        
+        // Update label text
+        addtaskLBL.text = "AddTaskKey".localized()
+    }
 
-            // Update the label text
-            addtaskLBL.text = NSLocalizedString("AddTaskKey", comment: "Add task label text")
-        }
 
     @IBAction func saveBtnTapped(_ sender: UIButton) {
         guard let taskName = addTaskTF.text, !taskName.isEmpty else {

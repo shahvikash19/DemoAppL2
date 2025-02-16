@@ -27,12 +27,23 @@
                                     <action selector="signinBtnTapped:" destination="BYZ-38-t0r" eventType="valueChanged" id="MX2-jh-83A"/>
                                 </connections>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XKB-7i-nye">
+                                <rect key="frame" x="135" y="259" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Hxi-0b-xBe"/>
+                                    <constraint firstAttribute="height" constant="50" id="mRR-49-Q8P"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="7xN-kS-Xog" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="FoF-f2-qfD"/>
+                            <constraint firstItem="XKB-7i-nye" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="V9N-nY-0rx"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7xN-kS-Xog" secondAttribute="trailing" constant="20" id="gYd-Kp-Djk"/>
+                            <constraint firstItem="XKB-7i-nye" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="od3-Jg-AKc"/>
                             <constraint firstItem="7xN-kS-Xog" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="v3y-dc-HUk"/>
                         </constraints>
                     </view>
@@ -277,7 +288,7 @@
                                         <state key="normal" image="arrowshape.turn.up.backward.fill" catalog="system"/>
                                         <connections>
                                             <action selector="backBtn:" destination="4ja-4W-3Gm" eventType="touchUpInside" id="ZEL-sb-gif"/>
-                                            <action selector="backbtn:" destination="IbH-cP-dRd" eventType="touchUpInside" id="rCX-TK-mlc"/>
+                                            <action selector="backButtonTapped:" destination="IbH-cP-dRd" eventType="touchUpInside" id="lhO-7O-A1j"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Change Language" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zLk-gK-vXo">
@@ -338,7 +349,7 @@
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="saveLanguageBTN:" destination="IbH-cP-dRd" eventType="touchUpInside" id="Lf3-6R-5kh"/>
+                                    <action selector="saveLanguageButtonTapped:" destination="IbH-cP-dRd" eventType="touchUpInside" id="VQ3-7C-jyS"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -357,10 +368,10 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="arabicST" destination="5j6-aN-IiT" id="MwE-mC-j74"/>
-                        <outlet property="changeLanguageLBL" destination="zLk-gK-vXo" id="fIr-1j-a72"/>
-                        <outlet property="englishST" destination="4KK-YT-Cbi" id="WNP-yx-Ujw"/>
-                        <outlet property="saveBTN" destination="Zbo-ac-xLC" id="nbb-Pe-iWg"/>
+                        <outlet property="arabicSwitch" destination="5j6-aN-IiT" id="8NQ-Cc-sIw"/>
+                        <outlet property="changeLanguageLabel" destination="zLk-gK-vXo" id="awq-m7-OLd"/>
+                        <outlet property="englishSwitch" destination="4KK-YT-Cbi" id="20w-Fx-mrP"/>
+                        <outlet property="saveButton" destination="Zbo-ac-xLC" id="8wm-It-ncZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bST-F8-rzi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -726,7 +737,7 @@
                     <tabBarItem key="tabBarItem" title="ToDo" image="list.bullet.clipboard" catalog="system" selectedImage="list.clipboard.fill" id="A6f-jX-YV2"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="bbA-aW-S8n">
-                        <rect key="frame" x="0.0" y="20" width="320" height="50"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -745,7 +756,7 @@
                     <tabBarItem key="tabBarItem" title="Encryption" image="lock.circle" catalog="system" selectedImage="lock.circle.fill" id="lEq-qG-elv"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="3PQ-mz-TXW">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -764,7 +775,7 @@
                     <tabBarItem key="tabBarItem" title="Stopwatch" image="stopwatch" catalog="system" selectedImage="stopwatch.fill" id="8o7-Lk-L7Z"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="tds-IB-3GK">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
