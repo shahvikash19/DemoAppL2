@@ -23,6 +23,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         UIView.appearance().semanticContentAttribute = .forceLeftToRight
         UITextField.appearance().textAlignment = .left
+        UISwitch.appearance().semanticContentAttribute = .forceLeftToRight
+        UILabel.appearance().semanticContentAttribute = .forceLeftToRight
+        
         return true
     }
     

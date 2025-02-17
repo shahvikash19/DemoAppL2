@@ -45,18 +45,7 @@ class EncryptionVC: UIViewController {
     }
     
     @IBAction func encryptedBTN(_ sender: UIButton) {
-//        guard let text = textfield1.text, !text.isEmpty,
-//              let key = textfield2.text, !key.isEmpty else {
-//            showlbl.text = "Please enter both text and secret key."
-//            return
-//        }
-//        
-//        let combinedText = "\(key):\(text)"
-//        if let encryptedText = encrypt(text: combinedText) {
-//            showlbl.text = "Encrypted: \(encryptedText)"
-//        } else {
-//            showlbl.text = "Encryption failed."
-//        }
+
         guard let text = textfield1.text, !text.isEmpty,
                   let key = textfield2.text, !key.isEmpty else {
                 showlbl.text = "Please enter both text and secret key."
@@ -66,28 +55,13 @@ class EncryptionVC: UIViewController {
             if let encryptedText = encryptAES(text: text, key: key) {
                 showlbl.text = "Encrypted: \(encryptedText)"
                 print("Encrypted: \(encryptedText)")
+                textfield1.text = ""
             } else {
                 showlbl.text = "Encryption failed."
             }
     }
 
     @IBAction func decryptedBTN(_ sender: UIButton) {
-//        guard let encryptedText = textfield1.text, !encryptedText.isEmpty,
-//              let key = textfield2.text, !key.isEmpty else {
-//            showlbl.text = "Please enter both encrypted text and secret key."
-//            return
-//        }
-//        
-//        if let decryptedText = decrypt(text: encryptedText) {
-//            let components = decryptedText.split(separator: ":")
-//            if components.count == 2, components[0] == key {
-//                showlbl.text = "Decrypted: \(components[1])"
-//            } else {
-//                showlbl.text = "Invalid key or text."
-//            }
-//        } else {
-//            showlbl.text = "Decryption failed."
-//        }
         guard let encryptedText = textfield1.text, !encryptedText.isEmpty,
                   let key = textfield2.text, !key.isEmpty else {
                 showlbl.text = "Please enter both encrypted text and secret key."
@@ -97,6 +71,7 @@ class EncryptionVC: UIViewController {
             if let decryptedText = decryptAES(text: encryptedText, key: key) {
                 showlbl.text = "Decrypted: \(decryptedText)"
                 print("Decrypted: \(decryptedText)")
+                
             } else {
                 showlbl.text = "Decryption failed."
                 print("Decryption failed.")

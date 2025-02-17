@@ -18,7 +18,6 @@ class menuVC: UIViewController {
     }
     
     func updateLocalizedStrings() {
-        // Set localized titles for the buttons
         logoutBtn.setTitle("LogoutKey".localized(), for: .normal)
         changeLanguageBTN.setTitle("ChangeLanguageKey".localized(), for: .normal)
     }
@@ -32,5 +31,18 @@ class menuVC: UIViewController {
     
     
     @IBAction func logoutBTN(_ sender: UIButton) {
+        UserDefaults.standard.removeObject(forKey: "UserEmail")
+        UserDefaults.standard.removeObject(forKey: "UserPassword")
+        UserDefaults.standard.synchronize()
+        
+        // view.window?.rootViewController?.dismiss(animated: true, completion: nil)
+        
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let loginVC = storyboard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+            
+            // Set the root view controller to the login screen
+            let sceneDelegate = UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate
+            sceneDelegate?.window?.rootViewController = UINavigationController(rootViewController: loginVC)
     }
 }

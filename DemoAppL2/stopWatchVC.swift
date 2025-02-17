@@ -37,7 +37,7 @@ class stopWatchVC: UIViewController {
     }
     
     func updateLocalizedStrings() {
-            welcomeLBL.text = NSLocalizedString("welcomeKey", comment: "Welcome label text")
+        welcomeLBL.text = "welcomeKey".localized()
         }
 
     @IBAction func menu3BTN(_ sender: UIButton) {

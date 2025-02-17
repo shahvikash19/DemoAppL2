@@ -31,12 +31,17 @@ class TaskVC: UIViewController {
     }
     
     func updateLocalizedStrings() {
-        // Update button titles using the localized() extension
         clrBTN.setTitle("ClearKey".localized(), for: .normal)
         saveBTN.setTitle("SaveKey".localized(), for: .normal)
-        
-        // Update label text
         addtaskLBL.text = "AddTaskKey".localized()
+        
+        if let selectedLanguage = UserDefaults.standard.string(forKey: "SelectedLanguage") {
+                if selectedLanguage == "ar" {
+                    dateTimePicker.locale = Locale(identifier: "ar")  // Arabic
+                } else {
+                    dateTimePicker.locale = Locale(identifier: "en")  // English
+                }
+            }
     }
 
 

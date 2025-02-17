@@ -13,6 +13,7 @@ class ViewController2: UITabBarController {
         super.viewDidLoad()
         
         navigationItem.hidesBackButton = true
+        navigationController?.setNavigationBarHidden(true, animated: false)
 
     }
     
